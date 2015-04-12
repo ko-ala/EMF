@@ -1,0 +1,62 @@
+namespace = emf_genetics
+
+# 0-9 reserved
+# This will eventually be the home of meneth.700 genetics event, plus room for others
+
+# EMF custom congenital trait proxy - from on_birth
+character_event = {
+	id = emf_genetics.10
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random = { # Born fertile?
+			chance = 1
+			if = {
+				limit = { is_female = yes }
+				add_trait = fertile_female
+			}
+			if = {
+				limit = { is_female = no }
+				add_trait = fertile_male
+			}
+		}
+		if = { # From mother?
+			limit = {
+				mother_even_if_dead = { trait = fertile_female }
+			}
+			random = {
+				chance = 25
+				if = {
+					limit = { is_female = yes }
+					add_trait = fertile_female
+				}
+				if = {
+					limit = { is_female = no }
+					add_trait = fertile_male
+				}
+			}
+		}
+		if = { # From father?
+			limit = {
+				father_even_if_dead = { trait = fertile_male }
+			}
+			random = {
+				chance = 25
+				if = {
+					limit = { is_female = yes }
+					add_trait = fertile_female
+				}
+				if = {
+					limit = { is_female = no }
+					add_trait = fertile_male
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
