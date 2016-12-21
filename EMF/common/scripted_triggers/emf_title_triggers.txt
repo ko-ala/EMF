@@ -1,6 +1,7 @@
 # -*- ck2.scripted_triggers -*-
 
 title_king_basic_allow = {
+	lower_real_tier_than = EMPEROR
 	OR = {
 		hidden_trigger = { has_character_flag = emf_aed_in_progress_tmp }
 		AND = {
