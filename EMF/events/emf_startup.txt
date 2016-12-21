@@ -236,6 +236,11 @@ character_event = {
 			limit = { trait = emf_customize_ruler }
 			character_event = { id = emf_startup.1002 days = 15 }
 		}
+		
+		# Remove any claims copied from prior ruler
+		any_claim = {
+			remove_claim = ROOT
+		}
 	}
 }
 
