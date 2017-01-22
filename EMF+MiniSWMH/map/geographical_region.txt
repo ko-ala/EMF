@@ -336,6 +336,7 @@ custom_icelandic = {
 ###########################################################################
 # EMF Regions
 ###########################################################################
+
 emf_region_etelkoz = {
 	duchies = {
 		d_podolia d_moldau d_basarabia
@@ -696,7 +697,7 @@ emf_region_manifest_destiny = {
 	}
 }
 
-custom_arctic_sea_zone = {
+emf_region_arctic_seazone = {
 	duchies = {
 		d_iceland 
 		d_faereyar 
@@ -713,7 +714,7 @@ custom_arctic_sea_zone = {
 	}
 }
 
-custom_baltic_sea_zone = {
+emf_region_baltic_seazone = {
 	duchies = {
 		#Finland
 		d_norrland 
@@ -772,7 +773,7 @@ custom_baltic_sea_zone = {
 	}
 }
 
-custom_north_sea_zone = {
+emf_region_north_seazone = {
 	regions = {
 		world_europe_west_brittania 
 		custom_norwegian 
@@ -813,7 +814,7 @@ custom_north_sea_zone = {
 	}
 }
 
-custom_atlantic_zone = {
+emf_region_atlantic_seazone = {
 	duchies = {
 		#Wales
 		d_deheubarth
@@ -863,7 +864,7 @@ custom_atlantic_zone = {
 	}
 }
 
-custom_west_med_zone = {
+emf_region_west_med_seazone = {
 	duchies = {
 		#Andalusia
 		d_sevilla
@@ -917,7 +918,7 @@ custom_west_med_zone = {
 	}
 }
 
-custom_east_med_zone = {
+emf_region_east_med_seazone = {
 	regions = {
 		world_europe_south_italy world_middle_east_jerusalem
 	}
@@ -967,7 +968,7 @@ custom_east_med_zone = {
 	}
 }
 
-custom_black_sea_zone = {
+emf_region_black_seazone = {
 	duchies = {
 		#ERE
 		d_thrace
@@ -1017,7 +1018,7 @@ custom_black_sea_zone = {
 	}
 }
 
-custom_indian_sea_zone = {
+emf_region_indian_seazone = {
 	duchies = {
 		#Sistan
 		d_makran
@@ -1066,5 +1067,55 @@ emf_region_saoshyant = {
 		d_soghd d_ustrushana d_ferghana d_shash d_khwarazm
 		d_zabolestan d_khottal
 		d_tigris d_kufa d_kermanshah d_baghdad d_samarra d_kurdistan
+	}
+}
+
+emf_region_levy_boost = {
+	regions = {
+		world_steppe_tarim
+	}
+	duchies = {
+		# e_persia
+		d_jebal d_khoar d_fars d_kerman d_hormuz d_mafaza d_ahwaz
+		d_tabarestan d_gilan d_gurgan d_azerbaijan
+		d_nishapur d_qohistan d_merv d_herat d_balkh
+		d_sistan d_makran
+		d_soghd d_ustrushana d_ferghana d_shash d_khwarazm
+		d_zabolestan d_khottal
+		d_tigris d_kufa d_kermanshah d_baghdad d_samarra d_kurdistan
+		# e_africa
+		d_tunis d_qamuda d_tripolitania d_kabylia d_zab
+		d_alger d_tlemcen d_tangiers d_fes d_marrakech
+		d_draa d_adrar d_taghaza
+		#Arabia
+		d_arabia_petrae d_medina d_nefoud d_amman
+		#Oman
+		d_oman
+		#Yemen
+		d_zabid d_sanaa d_hadramaut
+		#Mesopotamia
+		d_tigris d_kufa d_kermanshah d_baghdad d_samarra d_kurdistan
+		#Al-Jazira
+		d_amida d_jazira d_diyareast
+		#Antioch
+		d_edessa d_antioch d_tripoli
+		#Syria
+		d_aleppo d_homs d_damascus d_jordan
+		#Jerusalem
+		d_ascalon d_jerusalem d_oultrejourdain d_galilee d_acre
+		#Arran
+		d_shirvan d_albania d_derbent
+		#Egypt
+		d_alexandria d_damietta d_cairo d_alwahat d_aswan d_cyrenaica d_sinai
+		#Adal
+		d_berbera d_ifat d_tedjoura d_afar
+		#Abyssinia
+		d_axum d_damot d_gondar d_amhara
+		#Nubia
+		d_alodia d_nubia d_nobatia
+		#Sennar
+		d_sennar d_darfur
+		#Maikele Bahr
+		d_aydhab d_badi d_kassala
 	}
 }
